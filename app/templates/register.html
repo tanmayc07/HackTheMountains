@@ -1,0 +1,132 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+    />
+    <link rel="icon" href="img/book.svg" />
+    <title>Register</title>
+    <style></style>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav class="nav-wrapper transparent">
+        <ul>
+            <li>
+              <a onclick="window.history.back()" class="btn waves-effect waves-lights"><i
+                  class="material-icons">arrow_back</i></a>
+            </li>
+          </ul>
+
+        <div class="container">
+          <a href="home.html" class="brand-logo left-align" style="font-family: 'Poppins', sans-serif; color: #0065FF;">Hospeasy</a>
+          
+        
+        </div>
+      </nav>
+    </header>
+    <!-- cards -->
+<br><br>
+    <div class="container">
+        <div class="cards">
+          <div class="row">
+            <div class="col s12 l6">
+              <br><br><br><br><br><br>
+              <img src="./img/undraw_secure_login_pdn4.svg" alt="img" class="responsive-img">
+            </div>
+            <div class="col s12 l5 offset-l1">
+              <h4 class="">Register Now..</h4>
+              <!-- form -->
+              <form action="">
+                
+                <div class="input-field col l6">
+                  <input type="text" autocomplete="off" required>
+                  <label for="name">First Name</label>
+                </div>
+                
+                <div class="input-field col l6">
+                  <input type="text" autocomplete="off" required>
+                  <label for="name">Last Name</label>
+                </div>
+               
+                <div class="input-field col l12">
+                  <input type="email" autocomplete="off" name="" id="" required>
+                  <label for="">Your Email</label>
+                </div>
+                
+                <div class="input-field col l6">
+                  <input type="text" class="datepicker" required>
+                  <label for="">Date of Birth</label>
+                </div>
+                
+                <div class="input-field col l6">
+                  <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Other</option>
+                  </select>
+                  <label>Materialize Select</label>
+                </div>
+                
+                <div class="input-field col l12">
+                  <input type="text" autocomplete="off" required>
+                  <label for="">Username</label>
+                </div>
+               
+                <div class="input-field col l12 center">
+                  <input type="password" autocomplete="off" required>
+                  <label for="">Password</label>
+                  
+                  <br>    <br>
+                  <button class="btn-large" style="background-color: #6C63FF">Register</button>
+                </div> 
+                <p class="center">Already a member? <a href="login.html">Login here</a></p>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- spacing -->
+<br><br><br>
+   
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+      $(document).ready(function () {
+        // $(".sidenav").sidenav();
+        // $(".materialboxed").materialbox();
+        // $(".parallax").parallax();
+        // $(".scrollspy").scrollSpy();
+        $('select').formSelect();
+         $(".datepicker").datepicker({
+          // disableWeekends: true,
+          // minYear: 1970,
+          // maxYear: 2010
+          yearRange: [1970, 2020] 
+         });
+      });
+    </script>
+  </body>
+</html>
