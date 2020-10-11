@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Editor's Dependecy Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css" />
+    <!-- Editor's Style -->
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" />
+    <!-- logo font -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+    <title>Login</title>
+   
+  <style>
+    /* section {
+        min-height: 100vh;
+    }
+    .password.error,
+    .email.error {
+        color: red;
+    } */
+  
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper transparent">
+      <ul>
+        <li>
+          <a onclick="window.history.back()" class="btn waves-effect waves-lights"><i
+              class="material-icons">arrow_back</i></a>
+        </li>
+      </ul>
+      <div class="container">
+        <a href="#" class="brand-logo left-align" style="font-family: 'Poppins', sans-serif; color: #0065FF;">Hospeasy</a>
+        <!-- <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+          </a> -->
+       
+        
+      </div>
+    </nav>
+  </header>
+  <!-- cards -->
+  <br>
+  <section>
+    <div class="container">
+      <div class="cards">
+        <div class="row">
+          <div class="col s12 l6">
+            <br><br><br><br><br><br>
+            <img src="" alt="img" class="responsive-img">
+          </div>
+          <br><br><br><br><br>
+          <div class="col s12 l5 offset-l1">
+  
+                <h4 class="">Login</h4>
+                <!-- form -->
+                <form action="/login" method="POST">
+                  
+                 
+                  
+                  <div class="input-field col l12 center">
+                    <input type="email" autocomplete="off" name="email" id="email" required>
+                    <label for="">Email</label>
+                    <div class="email error"></div>
+                    
+                  </div>
+                 
+                  <div class="input-field col l12 center">
+                    <input type="password" autocomplete="off" name="password" id="password" required>
+                    <label for="">Password</label>
+                    <div class="password error"></div>
+                    
+                    <br>    <br>
+                    <button class="btn-large" style="background-color:#0065FF;" type="submit">Login</button>
+                  </div> 
+                  <h6 class="center">OR</h6>
+                  <p class="center">New here? <a href="">Create account</a></p>
+                </form>
+              </div>
+  
+              
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+   
+      
+  </body>
+
+</html>
